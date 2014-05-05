@@ -1,0 +1,12 @@
+.background .gradient {
+	height: 70%;
+	background: url(../img/project-gradient.png) bottom repeat-x;
+}
+
+.iefix label { display: block; }
+
+.left-right .arrow i { position: relative; top: 10px; }
+
+.launch { position: relative; top: -10px; }
+
+.launch i { position: relative; top: 10px; }

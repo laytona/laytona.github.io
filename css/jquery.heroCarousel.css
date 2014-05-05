@@ -1,0 +1,169 @@
+.hero {
+	width: 100%;
+	max-height: 520px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 49px;
+}
+	
+	.slider-image {
+	width: 100%;
+	height: auto;
+}
+	
+	.hero-carousel article {
+		width: 940px;
+		height: 418px;
+		margin: 0 auto;
+		display: block;
+		float: left;
+		position: relative;
+		opacity: 0.2;
+		transition: all 0.12s linear;
+		-moz-transition: all 0.12s linear;
+		-webkit-transition: all 0.12s linear;
+		-o-transition: all 0.12s linear;
+		}
+		
+	.current {
+		opacity: 1 !important;
+	}
+		
+	.hero-carousel-container article {
+		float: left;
+	}
+	
+		.hero-carousel article img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+			
+		.hero-carousel article .contents {
+			position: absolute;
+			z-index: 2;
+			bottom: 0;
+			left: 0;
+			list-style: none;
+			width: 100%;
+			min-height: 60px;
+			padding-top: 100px;
+			padding-bottom: 22px;
+			
+			color: white;
+			background: url(../img/slider-gradient.png) bottom repeat-x;
+		}
+		
+		.hero-carousel article .contents h4 {
+			margin-left: 40px;
+			margin-bottom: 8px;
+			opacity: 0.5;
+			padding-right: 125px;
+		}				
+			
+		.hero-carousel article .contents p {
+			position: relative;
+			bottom: 0;
+			color: white;
+			font-size: 16px;
+			margin-left: 40px;
+			opacity: 0.5;
+			padding-right: 125px;
+		}			
+			
+		.hero-carousel .current .contents h4, .hero-carousel .current .contents p {
+			opacity: 1 !important;
+			transition: all 0.1s linear;
+			-moz-transition: all 0.1s linear;
+			-webkit-transition: all 0.1s linear;
+			-o-transition: all 0.1s linear;
+		}
+			
+		.hero-carousel-nav {
+			width: 55px;
+			position: absolute;
+			bottom: 0;
+			right: 50%;
+			margin-right: -470px;
+			margin-bottom: 0;
+			z-index: 4;
+		}
+			
+			.hero-carousel-nav li {
+				position: absolute;
+				bottom: 40px;
+				right: 40px;
+				list-style: none;
+				background: #4e5257;
+				opacity: 0.5;
+				-moz-border-radius: 4px;
+				-webkit-border-radius: 4px;
+				border-radius: 4px;
+				transition: all 0.05s linear;
+				-moz-transition: all 0.07s linear;
+				-webkit-transition: all 0.07s linear;
+				-o-transition: all 0.07s linear;
+			}
+				
+			.hero-carousel-nav li.prev {
+				right: 75px;
+				background: #4e5257;
+			}
+				
+			.hero-carousel-nav li a {
+				color: #fff;
+				border: none;
+				outline: none;
+				display: block;
+				float: left;
+				height: 30px;
+				width: 30px;
+				
+				behavior: url(/assets/PIE.htc);
+			}
+				
+				.hero-carousel-nav li a i {
+					display: block;
+					width: 100%;
+					text-align: center;
+					font-size: 12px;
+					line-height: 2.6;
+					-webkit-font-smoothing: antialiased;
+				}
+				
+				.hero-carousel-nav li:hover, .hero-carousel-nav li.prev:hover {
+					background: #f5c11e;
+					opacity: 1;
+				}
+				
+				
+			.hero-carousel-nav li a:active,
+			.hero-carousel-nav li a:focus { 
+				border: none;
+				outline: none;
+			}
+				
+@media (min-width: 1200px) {
+	.hero-carousel article { width: 1170px; height: 520px; }
+	.hero-carousel-nav { margin-right: -585px; }
+	.hero-carousel article .contents h4, .hero-carousel article .contents p { padding-right: 320px; }					
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.hero-carousel article { width: 724px; height: 322px; }
+	.hero-carousel-nav { margin-right: -362px; }
+}
+
+@media (max-width: 767px) {
+	.hero { margin-bottom: 35px; }
+	.hero-carousel article { width: 480px; height: 213px; }
+	.hero-carousel-nav { margin-right: -240px; }
+	.hero-carousel-nav li { bottom: 20px; right: 20px; }
+	.hero-carousel article .contents p { font-size: 12px; margin-left: 20px; margin-bottom: 0; }
+	.hero-carousel article .contents h4 { font-size: 18px; margin-left: 20px; }
+	.hero-carousel article .contents { padding-bottom: 15px; }
+	.hero-carousel-nav li.prev { right: 55px; }	
+}
+
+@media (max-width: 479px) { .hero-carousel { display: none; } }
