@@ -28,7 +28,7 @@
 	header nav ul#navigation { padding-top: 0; margin-top: 56px; }
 	header nav ul#navigation.pull-right > li { font-size: 16px; margin-left: 10px; }
 	header nav ul#navigation.pull-right > li > { padding-top: 0; }
-	header nav ul#navigation.pull-right > li > a.active { padding-bottom: 4px; border-top: none; border-bottom: 2px solid #f5c11e; color: #f5c11e; }
+	header nav ul#navigation.pull-right > li > a.active { padding-bottom: 4px; border-top: none; border-bottom: 2px solid #3e98d2; color: #3e98d2; }
 	
 	footer nav li a { margin-left: 8px; font-size: 12px; }
 	
