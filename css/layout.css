@@ -264,15 +264,15 @@
 	.service-icon.icon1 {
 		background-position: right top;
 		background-repeat: no-repeat;
-		background-image: url(../img/services/strategy.png);
-		background: -Webkit-image-set(url(../img/services/strategy.png) 1x, url(../img/services/strategy@2x.png) 2x) right top no-repeat; /* Image for Retina */
+		background-image: url(../img/services/UI.png);
+		background: -Webkit-image-set(url(../img/services/UI.png) 1x, url(../img/services/UI@2x.png) 2x) right top no-repeat; /* Image for Retina */
 	}
 	
 	.service-icon.icon2 {
 		background-position: right top;
 		background-repeat: no-repeat;
-		background-image: url(../img/services/creative.png);
-		background: -Webkit-image-set(url(../img/services/creative.png) 1x, url(../img/services/creative@2x.png) 2x) right top no-repeat; /* Image for Retina */
+		background-image: url(../img/services/UX.png);
+		background: -Webkit-image-set(url(../img/services/UX.png) 1x, url(../img/services/UX@2x.png) 2x) right top no-repeat; /* Image for Retina */
 	}
 	
 	.service-icon.icon3 {
